@@ -5,6 +5,10 @@ from typing import List
 import numpy as np
 from openai import OpenAI
 from PyPDF2 import PdfReader
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Constants
 MAX_FILE_SIZE = 50 * 1024 * 1024  # 50MB in bytes
